@@ -7,5 +7,7 @@ import br.com.tattoo.assistance.backend.entities.Tatuador;
 
 @Repository
 public interface TatuadorRepository extends JpaRepository<Tatuador, Long>{
+	
+	Tatuador findByEmail(String email);
 
 }

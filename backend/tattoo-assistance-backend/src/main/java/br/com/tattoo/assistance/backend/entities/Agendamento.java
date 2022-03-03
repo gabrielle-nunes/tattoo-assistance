@@ -15,11 +15,11 @@ import br.com.tattoo.assistance.backend.enums.TamanhoTatuagem;
 @Entity(name = "agendamento")
 public class Agendamento {
 
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date diaHora;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date diaHora;
 	private BigDecimal valorPagoAdiantado;
 	private String localTatuado;
 	private TamanhoTatuagem tamanhoTatuagem;
