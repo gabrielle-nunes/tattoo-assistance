@@ -1,7 +1,7 @@
 package br.com.tattoo.assistance.backend.dto;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.validation.constraints.NotBlank;
@@ -15,8 +15,8 @@ public class ClienteDTO {
 	private String cpf;
 	@NotBlank
 	private String nome;
-	@NotBlank
-	private Date dataNascimento;
+	//@NotBlank
+	private LocalDateTime dataNascimento;
 	@NotBlank
 	private String telefone;
 	
@@ -38,11 +38,11 @@ public class ClienteDTO {
 		this.nome = nome;
 	}
 
-	public Date getDataNascimento() {
+	public LocalDateTime getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(LocalDateTime dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
